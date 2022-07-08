@@ -8,7 +8,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const port = app.get(ConfigService).get('PORT');
 
-  const options = new DocumentBuilder().setTitle('Palm Commerce').setVersion('0.0.1').addBearerAuth().build(); // prettier-ignore
+  const options = new DocumentBuilder().setTitle('Alaska API').setVersion('0.0.1').addBearerAuth().build(); // prettier-ignore
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
 

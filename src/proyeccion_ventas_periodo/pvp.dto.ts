@@ -1,31 +1,33 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class objetivoDistDTO {
+export class pvpDTO {
   @ApiProperty()
   id?: number;
   
   @ApiProperty()
-  CUSTNMBR: string;
-  
-  @ApiProperty()
-  OBJETIVO: string;
-  
-  @ApiProperty()
-  MES: string;
-  
-  @ApiProperty()
-  YEAR: string;
-  
-  @ApiProperty()
-  PRODUCTO: string;
-  
-  @ApiProperty()
-  PRCLEVEL: string;
-  
-  @ApiProperty()
-  PRECIO_OR: string;
-  
-  @ApiProperty()
-  PRECIO_META: string;
+  CODIGO: string;
 
+  @ApiProperty()
+  DESCRIPCION: string;
+
+  @ApiProperty()
+  CANTIDAD: string;
+
+  @ApiProperty()
+  MONTO: string;
+
+  @ApiProperty()
+  PRECIO_P: string;
+
+  @ApiProperty()
+  LOCALIDAD: string;
+
+  @ApiProperty()
+  ANO: string;
+
+  @ApiProperty()
+  MES_Periodo: string;
+
+  @ApiProperty()
+  DIA: string;
 }
